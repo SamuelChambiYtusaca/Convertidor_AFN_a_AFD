@@ -1,0 +1,21 @@
+digraph finite_state_machine {
+fontname="Helvetica,Arial,sans-serif"
+node [fontname="Helvetica,Arial,sans-serif"]
+edge [fontname="Helvetica,Arial,sans-serif"]
+rankdir=LR;
+node [shape = doublecircle];10 ;
+node [shape = circle];
+0 -> 1[label = "e"];
+0 -> 7[label = "e"];
+1 -> 2[label = "e"];
+1 -> 4[label = "e"];
+2 -> 3[label = "0"];
+3 -> 6[label = "e"];
+4 -> 5[label = "1"];
+5 -> 6[label = "e"];
+6 -> 7[label = "e"];
+6 -> 1[label = "e"];
+7 -> 8[label = "0"];
+8 -> 9[label = "1"];
+9 -> 10[label = "1"];
+}
